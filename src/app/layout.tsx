@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    default: 'EngageOS - Invest at the perfect time.',
   },
   description:
     'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={clsx('bg-gray-50 antialiased', inter.variable)}>
+    <html lang="en" className={clsx('bg-white antialiased', inter.variable)}>
       <body>{children}</body>
     </html>
   )

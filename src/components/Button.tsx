@@ -10,6 +10,8 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
+    gradient:
+      'bg-gradient-to-r from-[#caa5f0] via-[#8f79f9] to-[#3c82f5] text-white hover:brightness-110 active:brightness-95',
     cyan: 'relative overflow-hidden bg-cyan-500 text-white before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-cyan-600 active:text-white/80 before:transition-colors',
     white:
       'bg-white text-cyan-900 hover:bg-white/90 active:bg-white/90 active:text-cyan-900/70',
