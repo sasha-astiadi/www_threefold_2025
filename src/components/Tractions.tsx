@@ -57,8 +57,8 @@ export default function Tractions() {
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
             <h2 className="text-base/8 font-semibold text-gray-900">Our track record</h2>
-            <p className="mt-2 text-4xl font-medium tracking-tight text-gray-900 sm:text-5xl">
-              Trusted by thousands of creators worldwide
+            <p className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+              Trusted by Changemakers worldwide
             </p>
             <p className="mt-6 lg:text-lg text-base text-gray-600">
                 Engage OS powers the digital headquarters for over 300,000 users across 50+ countries. From grassroots NGOs to global movements, our platform is built to scale impact, not just numbers.
