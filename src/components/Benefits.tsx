@@ -8,7 +8,7 @@ import Benefits4 from '@/images/benefits/benefits4.jpg'
 
 export default function Benefits() {
   return (
-    <div className="bg-white lg:py-24 py-12">
+    <div className="bg-white py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <Container>
             <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">

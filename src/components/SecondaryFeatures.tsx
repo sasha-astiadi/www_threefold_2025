@@ -1,43 +1,47 @@
 import { useId } from 'react'
+import { SquaresPlusIcon, BeakerIcon, CurrencyDollarIcon, AdjustmentsVerticalIcon, SparklesIcon, ServerStackIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
+import AppScreenshot from '@/images/app_screenshot.png'
+
 
 import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Engage Supporters with Community Tools.',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
-    icon: DeviceArrowIcon,
+      'Inspire action through built-in community tools like forums, comments, and stories that spark meaningful participation.',
+    icon: SquaresPlusIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Train with AI-powered Learning Paths.',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
-    icon: DeviceCardsIcon,
+      'Deliver scalable training with AI-powered learning paths, auto-generated content, and multilingual support.',
+    icon: BeakerIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Fundraise via Peer & Micro-Donations.',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
-    icon: DeviceClockIcon,
+      'Empower supporters to fundraise through peer-to-peer campaigns, micro-donations, and integrated payment solutions.',
+    icon: CurrencyDollarIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Measure & Optimize Real-World Impact.',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
-    icon: DeviceListIcon,
+      'Track real impact with dashboards that visualize KPIs, community activity, and field-level data.',
+    icon: AdjustmentsVerticalIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'White-Label Everything.',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
-    icon: DeviceLockIcon,
+      'Own your brand with a fully customizable platform—your name, your colors, your digital HQ.',
+    icon: SparklesIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Robust & Secure Infrastructure.',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
-    icon: DeviceChartIcon,
+      'Host on your terms via decentralized, privacy-respecting infrastructure built for trust and security.',
+    icon: ServerStackIcon,
   },
 ]
 
@@ -191,18 +195,31 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for building a portfolio"
-      className="py-20 sm:py-32"
+      className="pt-12 pb-24"
     >
       <Container>
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+        <div className="mx-auto max-w-4xl sm:text-center">
+          <h2 className="lg:text-4xl text-3xl font-medium tracking-tight text-gray-900">
+            The Platform Built for Purpose-driven Organizations
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+          <p className="mt-4 lg:text-lg text-base text-gray-600">
+            Engage OS is the first plug-and-play engagement infrastructure built for civil society. From Red Cross OS to Montessori OS, any org can launch their own digital headquarters—no tech team needed.
           </p>
         </div>
+        <div className="relative overflow-hidden pt-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Image
+            alt="App screenshot"
+            src={AppScreenshot}
+            width={2432}
+            height={1442}
+            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+          />
+          <div aria-hidden="true" className="relative">
+            <div className="absolute -inset-x-20 bottom-0 bg-linear-to-t from-white pt-[7%]" />
+          </div>
+        </div>
+      </div>
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"

@@ -16,7 +16,6 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
-import Benefits from './Benefits'
 
 function BackgroundIllustration(props: React.ComponentPropsWithoutRef<'div'>) {
   let id = useId()
@@ -106,9 +105,8 @@ function PlayIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden lg:pt-24 lg:pb-24 pt-12 pb-24">
+    <div className="overflow-hidden lg:pt-24 lg:pb-24 py-12">
       <HeroHome />
-      <Benefits />
     </div>
   )
 }

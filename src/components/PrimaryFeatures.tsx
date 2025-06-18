@@ -430,7 +430,7 @@ function FeaturesDesktop() {
             )}
             <div className="relative z-10 p-8">
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 text-lg font-semibold text-white">
+              <h3 className="mt-6 lg:text-lg text-base font-semibold text-white">
                 <Tab className="text-left data-selected:not-data-focus:outline-hidden">
                   <span className="absolute inset-0 rounded-2xl" />
                   {feature.name}
@@ -531,7 +531,7 @@ function FeaturesMobile() {
               </PhoneFrame>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">
                 <feature.icon className="h-8 w-8" />
-                <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
+                <h3 className="mt-6 text-sm font-semibold text-white sm:lg:text-lg text-base">
                   {feature.name}
                 </h3>
                 <p className="mt-2 text-sm text-gray-400">
@@ -579,7 +579,7 @@ export function PrimaryFeatures() {
           <h2 className="text-3xl font-medium tracking-tight text-white">
             Every feature you need to win. Try it for yourself.
           </h2>
-          <p className="mt-2 text-lg text-gray-400">
+          <p className="mt-2 lg:text-lg text-base text-gray-400">
             Pocket was built for investors like you who play by their own rules
             and aren’t going to let SEC regulations get in the way of their
             dreams. If other investing tools are afraid to build it, Pocket has

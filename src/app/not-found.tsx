@@ -12,7 +12,7 @@ export default function NotFound() {
         <h1 className="mt-2 text-3xl font-medium tracking-tight text-gray-900">
           Page not found
         </h1>
-        <p className="mt-2 text-lg text-gray-600">
+        <p className="mt-2 lg:text-lg text-base text-gray-600">
           Sorry, we couldn’t find the page you’re looking for.
         </p>
         <Button href="/" variant="outline" className="mt-8">

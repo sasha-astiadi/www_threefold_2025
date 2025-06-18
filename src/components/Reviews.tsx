@@ -150,7 +150,7 @@ function Review({
     >
       <blockquote className="text-gray-900">
         <StarRating rating={rating} />
-        <p className="mt-4 text-lg/6 font-semibold before:content-['“'] after:content-['”']">
+        <p className="mt-4 lg:text-lg text-base/6 font-semibold before:content-['“'] after:content-['”']">
           {title}
         </p>
         <p className="mt-3 text-base/7">{body}</p>
@@ -284,7 +284,7 @@ export function Reviews() {
         >
           Everyone is changing their life with Pocket.
         </h2>
-        <p className="mt-2 text-lg text-gray-600 sm:text-center">
+        <p className="mt-2 lg:text-lg text-base text-gray-600 sm:text-center">
           Thousands of people have doubled their net-worth in the last 30 days.
         </p>
         <ReviewGrid />

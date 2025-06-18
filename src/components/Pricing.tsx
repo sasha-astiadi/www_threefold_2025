@@ -225,7 +225,7 @@ export function Pricing() {
           >
             Flat pricing, no management fees.
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
+          <p className="mt-2 lg:text-lg text-base text-gray-600">
             Whether you’re one person trying to get ahead or a big firm trying
             to take over the world, we’ve got a plan for you.
           </p>

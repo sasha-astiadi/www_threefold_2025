@@ -69,7 +69,7 @@ export function Faqs() {
           >
             Frequently asked questions
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
+          <p className="mt-2 lg:text-lg text-base text-gray-600">
             If you have anything else you want to ask,{' '}
             <a
               href="mailto:info@example.com"
@@ -89,7 +89,7 @@ export function Faqs() {
               <ul role="list" className="space-y-10">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="text-lg/6 font-semibold text-gray-900">
+                    <h3 className="lg:text-lg text-base/6 font-semibold text-gray-900">
                       {faq.question}
                     </h3>
                     <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
