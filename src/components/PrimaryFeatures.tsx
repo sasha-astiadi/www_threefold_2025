@@ -39,7 +39,7 @@ const features = [
   {
     name: 'Invite friends for better returns',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'For every friend you invite to EngageOS, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
     icon: DeviceUserIcon,
     screen: InviteScreen,
   },
@@ -580,9 +580,9 @@ export function PrimaryFeatures() {
             Every feature you need to win. Try it for yourself.
           </h2>
           <p className="mt-2 lg:text-lg text-base text-gray-400">
-            Pocket was built for investors like you who play by their own rules
+            EngageOS was built for investors like you who play by their own rules
             and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
+            dreams. If other investing tools are afraid to build it, EngageOS has
             it.
           </p>
         </div>

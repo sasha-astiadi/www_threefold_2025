@@ -7,6 +7,7 @@ import { Reviews } from '@/components/Reviews'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import Tractions from '@/components/Tractions'
 import Benefits from '@/components/Benefits'
+import  Cta from '@/components/Cta'
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
       <Tractions />
       <Benefits />
       <SecondaryFeatures />
-      <CallToAction />
       <Reviews />
       <Pricing />
+      <Cta />
       <Faqs />
     </>
   )

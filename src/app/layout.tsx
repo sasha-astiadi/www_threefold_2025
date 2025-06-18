@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Pocket',
+    template: '%s - EngageOS',
     default: 'EngageOS - Invest at the perfect time.',
   },
   description:
