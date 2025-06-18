@@ -14,59 +14,68 @@ const plans = [
     featured: false,
     price: { Monthly: '$0', Annually: '$0' },
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Perfect for small teams and early-stage initiatives getting started with community engagement.',
     button: {
-      label: 'Get started for free',
+      label: 'Launch for Free',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Up to 1,000 members',
+      'Built-in community tools (forums, updates, events)',
+      'Basic learning paths',
+      'Donations & campaigns',
+      'Your logo & colors',
+      'EngageOS subdomain (yourname.engageos.org)',
+      'Email support',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
-    description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
-    ],
-    logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
+    name: 'Impact',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: { Monthly: '$89', Annually: '$890' },
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'For growing organizations ready to scale impact, train supporters, and fundraise with confidence.',
     button: {
-      label: 'Subscribe',
+      label: 'Get Started',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Up to 25,000 members',
+      'Advanced training with AI-powered content',
+      'Multilingual support',
+      'Peer-to-peer fundraising tools',
+      'Impact dashboards & metrics',
+      'Full branding (custom domain, logo, colors)',
+      'API access + integrations (Mailchimp, CRM)',
+      'Priority support',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
+  {
+    name: 'Sovereign',
+    featured: false,
+    price: { Monthly: 'Custom', Annually: 'Custom' },
+    description:
+      'Best for large-scale networks and institutions with custom needs, privacy requirements, or regional infrastructure.',
+    button: {
+      label: 'Contact Sales',
+      href: '/contact',
+    },
+    features: [
+      'Unlimited members & projects',
+      'White-label platform (yourname.org)',
+      'Self-host or deploy in your region',
+      'Custom integrations & AI assistants',
+      'Field-level data collection',
+      'Dedicated success manager',
+      'Onboarding & migration support',
+      '24/7 enterprise-grade support',
+    ],
+    logomarkClassName: 'fill-gray-500',
+  },
 ]
+
 
 function CheckIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
