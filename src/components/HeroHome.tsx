@@ -22,7 +22,7 @@ export default function HeroHome() {
                 Empowering Purpose-Driven Organizations.
               </h1>
               <p className="mt-8 lg:lg:text-lg text-base text-base text-gray-600">
-                Welcome to <span className={`font-semibold ${gradientText}`}>Engage OS</span>: the first all-in-one, white-label engagement platform to mobilize communities, engage supporters, scale impact, and fundraise—at a fraction of the cost.
+                Welcome to <span className={`font-semibold ${gradientText}`}>EngageOS</span>: the first all-in-one, white-label engagement platform to mobilize communities, engage supporters, scale impact, and fundraise—at a fraction of the cost.
               </p>
               <div className="mt-12 flex items-center justify-center gap-x-6 relative z-10">
                 <Button color="gradient">Get in Touch</Button>

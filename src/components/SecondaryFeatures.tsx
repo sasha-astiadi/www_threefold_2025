@@ -58,7 +58,7 @@ export function SecondaryFeatures() {
             The Platform Built for Purpose-driven Organizations
           </h2>
           <p className="mt-4 lg:text-lg text-base text-gray-600">
-            Engage OS is the first plug-and-play engagement infrastructure built for civil society. From Red Cross OS to Montessori OS, any org can launch their own digital headquarters—no tech team needed.
+            EngageOS is the first plug-and-play engagement infrastructure built for civil society. From Red Cross OS to Montessori OS, any org can launch their own digital headquarters—no tech team needed.
           </p>
         </div>
         <div className="relative overflow-hidden pt-16">

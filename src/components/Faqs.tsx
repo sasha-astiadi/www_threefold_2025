@@ -3,56 +3,57 @@ import { Container } from '@/components/Container'
 const faqs = [
   [
     {
-      question: 'How do I know the tips are good?',
+      question: 'What is EngageOS?',
       answer:
-        'Our whole business depends on our tips being good, so it’s in our best interest that they are. The results of our customers speak for themselves, just trust us.',
+        'EngageOS is a white-label engagement platform built specifically for purpose-driven organizations. It allows NGOs, foundations, and impact coalitions to launch their own branded platforms to engage communities, deliver training, and mobilize support.',
     },
     {
-      question: 'Isn’t this insider trading?',
+      question: 'Do I need a tech team to use EngageOS?',
       answer:
-        'Yes exactly. But at scale! Historically you could only make insider trades with knowledge from your direct network. Pocket brings you insider trading tips from people you don’t even know.',
+        'No. EngageOS is fully plug-and-play. It’s designed so any organization—regardless of technical capacity—can deploy and customize their own platform without writing a line of code.',
     },
     {
-      question: 'But isn’t insider trading illegal?',
+      question: 'Can we fully customize the platform’s look and feel?',
       answer:
-        'Here’s the thing: you’re the one doing the insider trading, not us. We’re just giving you the tips and some tools to make trades. We’re not doing anything wrong here.',
-    },
-  ],
-  [
-    {
-      question: 'Do the people giving you tips realize what they are doing?',
-      answer:
-        'Again I would argue this isn’t really our responsibility. People make their own choices. If they don’t research the consequences that’s on them, not on us.',
-    },
-    {
-      question: 'Where is Pocket based?',
-      answer:
-        'Let’s just say it’s not somewhere where the SEC is going to find us.',
-    },
-    {
-      question: 'Is there any age limit to trading on Pocket?',
-      answer:
-        'For our free plan, the age limit is based on the minimum age to trade in your country of residence. Our VIP plan uses advanced transaction anonymization though, so you can use that plan even if you’re 9 years old. Or a dog.',
+        'Absolutely. From logos and colors to navigation and community features, EngageOS supports full white-label customization so the platform feels like your own digital headquarters.',
     },
   ],
   [
     {
-      question: 'How did you get this on the App Store?',
+      question: 'What kinds of organizations use EngageOS?',
       answer:
-        'Honestly we were surprised too, but eventually we found out that the app reviewer found the app so compelling they approved it just so they could use it themselves.',
+        'We work with NGOs, educational networks, development agencies, faith-based groups, and mission-aligned coalitions that want to better engage, train, and mobilize their communities at scale.',
     },
     {
-      question: 'How do I explain the money I withdraw from Pocket to the IRS?',
+      question: 'Is EngageOS multilingual and accessible offline?',
       answer:
-        'This feels like one-hundred percent a you problem. Pocket is not responsible in any way for your tax returns.',
+        'Yes. The platform supports multilingual content and offline-friendly delivery—ideal for reaching underserved communities with limited connectivity.',
     },
     {
-      question: 'How do I become an insider?',
+      question: 'Can we use EngageOS for fundraising?',
       answer:
-        'Contact us with some details about your industry and the type of access you have to apply for an insider account. Once approved, we’ll send you a guide on collecting insider information without being detected at work.',
+        'Yes. EngageOS includes built-in fundraising tools, including peer-to-peer, micro-donation, and pay-it-forward models—plus full donor engagement capabilities.',
+    },
+  ],
+  [
+    {
+      question: 'How is EngageOS different from other platforms?',
+      answer:
+        'Unlike general-purpose platforms, EngageOS is mission-built for civil society. It integrates engagement, learning, and fundraising in one secure, ethical platform—hosted on sovereign infrastructure.',
+    },
+    {
+      question: 'What is the pricing model?',
+      answer:
+        'EngageOS operates on a flexible SaaS model, with plans ranging from €30K to €300K annually depending on features and user scale. For grassroots initiatives, pay-it-forward and sponsorship models are also available.',
+    },
+    {
+      question: 'How do we get started?',
+      answer:
+        'Reach out to our team for a demo or strategy session. We’ll walk you through the options and help design the best deployment path for your mission.',
     },
   ],
 ]
+
 
 export function Faqs() {
   return (
