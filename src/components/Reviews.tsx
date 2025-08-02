@@ -16,13 +16,13 @@ interface Review {
 const reviews: Array<Review> = [
   {
     title: 'A true game-changer for nonprofits.',
-    body: 'EngageOS allowed us to centralize our volunteer hub, training, and crowdfunding into one platform. We’ve seen a 3x jump in community engagement.',
+    body: 'EngageOS allowed us to centralize our volunteer hub, training, and crowdfunding into one platform. We have seen a 3x jump in community engagement.',
     author: 'Sarah D., Program Director at WomenRise',
     rating: 5,
   },
   {
     title: 'No tech team needed.',
-    body: 'Launching our own branded platform felt intimidating—until EngageOS. It’s intuitive, scalable, and beautifully designed.',
+    body: 'Launching our own branded platform felt intimidating—until EngageOS. It is intuitive, scalable, and beautifully designed.',
     author: 'Ahmed K., Director at The Green Schools Alliance',
     rating: 5,
   },
@@ -52,7 +52,7 @@ const reviews: Array<Review> = [
   },
   {
     title: 'Highly recommend for grassroots orgs.',
-    body: 'Even with limited staff, we launched a branded hub in 10 days. It’s helping our community organize and train in ways we never imagined.',
+    body: 'Even with limited staff, we launched a branded hub in 10 days. It is helping our community organize and train in ways we never imagined.',
     author: 'Tania B., Founder of SpeakUp Brazil',
     rating: 5,
   },
@@ -69,13 +69,12 @@ const reviews: Array<Review> = [
     rating: 5,
   },
   {
-    title: 'This platform *is* our movement.',
+    title: 'This platform is our movement.',
     body: 'Before EngageOS, our digital presence was scattered. Now we have a true home where our supporters connect and take action.',
     author: 'Ravi P., Strategy Director at Clean Energy for All',
     rating: 5,
   },
 ]
-
 
 function StarIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -119,21 +118,21 @@ function Review({
   return (
     <figure
       className={clsx(
-        'animate-fade-in rounded-3xl bg-white p-6 opacity-0 shadow-md shadow-gray-900/5',
+        'animate-fade-in rounded-3xl bg-gray-900 p-6 opacity-0 shadow-md shadow-black/20',
         className,
       )}
       style={{ animationDelay }}
       {...props}
     >
-      <blockquote className="text-gray-900">
+      <blockquote className="text-white">
         <StarRating rating={rating} />
-        <p className="mt-4 lg:text-lg text-base/6 font-semibold before:content-['“'] after:content-['”']">
-          {title}
+        <p className="mt-4 lg:text-lg text-base/6 font-semibold">
+          "{title}"
         </p>
         <p className="mt-3 text-base/7">{body}</p>
       </blockquote>
-      <figcaption className="mt-3 text-sm text-gray-600 before:content-['–_']">
-        {author}
+      <figcaption className="mt-3 text-sm text-gray-300">
+        — {author}
       </figcaption>
     </figure>
   )
@@ -241,8 +240,8 @@ function ReviewGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-linear-to-b from-gray-50" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-gray-50" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-950" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-950" />
     </div>
   )
 }
@@ -253,15 +252,16 @@ export function Reviews() {
       id="reviews"
       aria-labelledby="reviews-title"
       className="pt-20 pb-16 sm:pt-32 sm:pb-24"
+      style={{ backgroundColor: '#121212' }}
     >
       <Container>
         <h2
           id="reviews-title"
-          className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
+          className="text-3xl font-medium tracking-tight text-white sm:text-center"
         >
           Everyone is changing their life with EngageOS.
         </h2>
-        <p className="mt-2 lg:text-lg text-base text-gray-600 sm:text-center">
+        <p className="mt-2 lg:text-lg text-base text-gray-300 sm:text-center">
           Thousands of people have doubled their net-worth in the last 30 days.
         </p>
         <ReviewGrid />

@@ -14,14 +14,14 @@ const navigation = [
 
 export default function HeroHome() {
   return (
-    <div className="bg-white">
+    <div style={{ backgroundColor: '#121212' }}>
         <div className="">
           <div className="mx-auto max-w-7xl px-8 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <h1 className="text-3xl font-medium tracking-tight text-gray-900 lg:text-5xl">
+              <h1 className="text-3xl font-medium tracking-tight text-white lg:text-5xl">
                 Empowering Purpose-Driven Organizations.
               </h1>
-              <p className="mt-8 lg:lg:text-lg text-base text-base text-gray-600">
+              <p className="mt-8 lg:lg:text-lg text-base text-base text-gray-300">
                 Welcome to <span className={`font-semibold ${gradientText}`}>EngageOS</span>: the first all-in-one, white-label engagement platform to mobilize communities, engage supporters, scale impact, and fundraise—at a fraction of the cost.
               </p>
               <div className="mt-12 flex items-center justify-center gap-x-6 relative z-10">

@@ -1,6 +1,6 @@
 export default function Cta() {
   return (
-    <div className="bg-white">
+    <div style={{ backgroundColor: '#121212' }}>
       <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
@@ -30,9 +30,9 @@ export default function Cta() {
             <circle r={512} cx={512} cy={512} fill="url(#engage-gradient)" fillOpacity="0.7" />
             <defs>
               <radialGradient id="engage-gradient">
-                <stop offset="0%" stop-color="#caa5f0" />
-                <stop offset="50%" stop-color="#8f79f9" />
-                <stop offset="100%" stop-color="#5d84e1" />
+                <stop offset="0%" stopColor="#caa5f0" />
+                <stop offset="50%" stopColor="#8f79f9" />
+                <stop offset="100%" stopColor="#5d84e1" />
                 </radialGradient>
 
             </defs>

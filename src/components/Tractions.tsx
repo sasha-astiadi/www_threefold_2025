@@ -19,11 +19,11 @@ const stats = [
 
 export default function Tractions() {
   return (
-    <div className="relative bg-white py-12">
+    <div className="relative py-12" style={{ backgroundColor: '#121212' }}>
       <div className="mx-auto grid max-w-7xl lg:grid-cols-2">
         {/* LEFT IMAGE + LOGO */}
         <div className="flex flex-col items-center lg:items-start gap-8 px-6 pb-12 lg:px-8">
-          <div className="w-full ring-1 ring-black/15 rounded-3xl overflow-hidden max-lg:rounded-t-4xl lg:rounded-tl-4xl">
+          <div className="w-full ring-1 ring-gray-700 rounded-3xl overflow-hidden max-lg:rounded-t-4xl lg:rounded-tl-4xl">
             <Image
               alt=""
               src={Traction}
@@ -56,18 +56,18 @@ export default function Tractions() {
         {/* RIGHT TEXT BLOCK */}
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
-            <h2 className="text-base/8 font-semibold text-gray-900">Our track record</h2>
-            <p className="mt-2 text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-base/8 font-semibold text-white">Our track record</h2>
+            <p className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-4xl">
               Trusted by Changemakers worldwide
             </p>
-            <p className="mt-6 lg:text-lg text-base text-gray-600">
+            <p className="mt-6 lg:text-lg text-base text-gray-300">
                 EngageOS powers the digital headquarters for over 300,000 users across 50+ countries. From grassroots NGOs to global movements, our platform is built to scale impact, not just numbers.
             </p>
             <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
               {stats.map((stat) => (
-                <div key={stat.id} className="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
-                  <dt className="text-sm/6 text-gray-600">{stat.name}</dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
+                <div key={stat.id} className="flex flex-col gap-y-3 border-l border-gray-600 pl-6">
+                  <dt className="text-sm/6 text-gray-300">{stat.name}</dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white">{stat.value}</dd>
                 </div>
               ))}
             </dl>

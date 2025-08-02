@@ -126,14 +126,14 @@ function Plan({
   return (
     <section
       className={clsx(
-        'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
-        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white',
+        'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-black/20',
+        featured ? 'order-first bg-cyan-600 lg:order-none' : 'bg-gray-900',
       )}
     >
       <h3
         className={clsx(
           'flex items-center text-sm font-semibold',
-          featured ? 'text-white' : 'text-gray-900',
+          featured ? 'text-white' : 'text-white',
         )}
       >
         <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
@@ -142,7 +142,7 @@ function Plan({
       <p
         className={clsx(
           'relative mt-5 flex text-3xl tracking-tight',
-          featured ? 'text-white' : 'text-gray-900',
+          featured ? 'text-white' : 'text-white',
         )}
       >
         {price.Monthly === price.Annually ? (
@@ -175,7 +175,7 @@ function Plan({
       <p
         className={clsx(
           'mt-3 text-sm',
-          featured ? 'text-gray-300' : 'text-gray-700',
+          featured ? 'text-gray-100' : 'text-gray-300',
         )}
       >
         {description}
@@ -186,8 +186,8 @@ function Plan({
           className={clsx(
             '-my-2 divide-y text-sm',
             featured
-              ? 'divide-gray-800 text-gray-300'
-              : 'divide-gray-200 text-gray-700',
+              ? 'divide-gray-700 text-gray-100'
+              : 'divide-gray-700 text-gray-300',
           )}
         >
           {features.map((feature) => (
@@ -195,7 +195,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500',
+                  featured ? 'text-white' : 'text-cyan-400',
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -205,7 +205,7 @@ function Plan({
       </div>
       <Button
         href={button.href}
-        color={featured ? 'cyan' : 'gray'}
+        color={featured ? 'white' : 'cyan'}
         className="mt-6"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
@@ -224,19 +224,20 @@ export function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-title"
-      className="border-t border-gray-200 bg-white py-24"
+      className="border-t border-gray-800 py-24"
+      style={{ backgroundColor: '#121212' }}
     >
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-3xl font-medium tracking-tight text-white"
           >
             Flat pricing, no management fees.
           </h2>
-          <p className="mt-2 lg:text-lg text-base text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+          <p className="mt-2 lg:text-lg text-base text-gray-300">
+            Whether you're one person trying to get ahead or a big firm trying
+            to take over the world, we've got a plan for you.
           </p>
         </div>
 
@@ -252,7 +253,7 @@ export function Pricing() {
                   key={period}
                   value={period}
                   className={clsx(
-                    'cursor-pointer border border-gray-300 px-[calc(--spacing(3)-1px)] py-[calc(--spacing(2)-1px)] text-sm text-gray-700 transition-colors hover:border-gray-400 data-focus:outline-2 data-focus:outline-offset-2',
+                    'cursor-pointer border border-gray-600 px-[calc(--spacing(3)-1px)] py-[calc(--spacing(2)-1px)] text-sm text-gray-300 transition-colors hover:border-gray-500 data-focus:outline-2 data-focus:outline-offset-2 bg-gray-800',
                     period === 'Monthly'
                       ? 'rounded-l-lg'
                       : '-ml-px rounded-r-lg',
@@ -286,7 +287,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto bg-white mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}
