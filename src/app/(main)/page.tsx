@@ -8,18 +8,12 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import Tractions from '@/components/Tractions'
 import Benefits from '@/components/Benefits'
 import  Cta from '@/components/Cta'
-
+import { GlobeDemo } from '@/components/GlobeDemo'
+import { SpotlightPreview } from '@/components/Spotlight'
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Tractions />
-      <Benefits />
-      <SecondaryFeatures />
-      <Reviews />
-      <Pricing />
-      <Cta />
-      <Faqs />
+      <SpotlightPreview />
     </>
   )
 }
