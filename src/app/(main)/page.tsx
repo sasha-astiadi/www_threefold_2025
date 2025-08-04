@@ -10,10 +10,13 @@ import Benefits from '@/components/Benefits'
 import  Cta from '@/components/Cta'
 import { GlobeDemo } from '@/components/GlobeDemo'
 import { SpotlightPreview } from '@/components/Spotlight'
+import { StackSectionPreview } from '@/components/StackSection'
+
 export default function Home() {
   return (
     <>
       <SpotlightPreview />
+      <StackSectionPreview />
     </>
   )
 }
