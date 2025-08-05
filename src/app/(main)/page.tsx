@@ -8,15 +8,20 @@ import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import Tractions from '@/components/Tractions'
 import Benefits from '@/components/Benefits'
 import  Cta from '@/components/Cta'
-import { GlobeDemo } from '@/components/GlobeDemo'
 import { SpotlightPreview } from '@/components/Spotlight'
 import { StackSectionPreview } from '@/components/StackSection'
+import GlobeDemo from '@/components/GlobeDemo'
+import { Dashboard } from '@/components/Dashboard'
+import { AppsPreview } from '@/components/Apps'
+
 
 export default function Home() {
   return (
     <>
       <SpotlightPreview />
       <StackSectionPreview />
+      <Dashboard />
+      <AppsPreview />
     </>
   )
 }

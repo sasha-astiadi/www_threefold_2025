@@ -44,9 +44,6 @@ export function SpotlightPreview() {
           <Button href="#" variant="outline" color="gray">
             Start Hosting
           </Button>
-          <Button href="#" variant="solid" color="white">
-            How it Works →
-          </Button>
         </div>
       </div>
     </div>
