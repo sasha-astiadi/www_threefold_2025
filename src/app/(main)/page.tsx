@@ -13,6 +13,7 @@ import { StackSectionPreview } from '@/components/StackSection'
 import GlobeDemo from '@/components/GlobeDemo'
 import { Dashboard } from '@/components/Dashboard'
 import { AppsPreview } from '@/components/Apps'
+import { FarmerPreview } from '@/components/Farmer'
 
 
 export default function Home() {
@@ -21,7 +22,9 @@ export default function Home() {
       <SpotlightPreview />
       <StackSectionPreview />
       <Dashboard />
+      <FarmerPreview />
       <AppsPreview />
+
     </>
   )
 }
