@@ -4,6 +4,7 @@ import React from "react";
 import Image from 'next/image'
 import { motion } from "framer-motion";
 
+
 import Algorand from '@/images/logos/algorand.svg'
 import Casperlabs from '@/images/logos/casperlabs.svg'
 import Discourse from '@/images/logos/discourse.svg'

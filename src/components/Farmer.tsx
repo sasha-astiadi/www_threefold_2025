@@ -2,6 +2,10 @@
 import { Button } from "./Button";
 import Image from "next/image";
 
+import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { CircleStackIcon } from "@heroicons/react/24/solid";
+import { CurrencyDollarIcon } from "@heroicons/react/24/solid";
+
 const posts = [
   {
     id: 1,
@@ -12,6 +16,7 @@ const posts = [
     description2: '',
     imageUrl:
       './images/3nodes.png',
+    icon: <CpuChipIcon className="h-6 w-6 text-white" />,
     },
     {
     id: 2,
@@ -21,6 +26,7 @@ const posts = [
       description2: '',
     imageUrl:
       './images/capacity.png',
+    icon: <CircleStackIcon className="h-6 w-6 text-white" />,
     },
     {
     id: 3,
@@ -31,6 +37,7 @@ const posts = [
       description2: '',
     imageUrl:
       './images/rewards.png',
+    icon: <CurrencyDollarIcon className="h-6 w-6 text-white" />,
     },
 ]
 
@@ -77,12 +84,10 @@ export function FarmerPreview() {
                 }}
                 >
                 </div>
-                <h3 className="mt-12 text-lg/6 font-semibold text-white">
-                <a href={post.href}>
-                  <span className="absolute inset-10" />
-                  {post.title}
-                </a>
-                </h3>
+                <div className="mt-12 flex items-start gap-x-3 text-lg/6 font-semibold text-white">
+                    {post.icon}
+                    {post.title}
+                </div>  
                 < div className="max-w-2/3">
                 <p className="mt-4 text-sm font-light text-gray-700">{post.description1}</p>
                 <p className=" text-sm font-light text-gray-700">{post.description2}</p>
