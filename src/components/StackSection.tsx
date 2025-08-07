@@ -13,7 +13,7 @@ export function StackSectionPreview() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-16 items-center lg:items-start">
           {/* Left Column - Text (1/3 width) */}
           <div className="text-center lg:text-left lg:col-span-1 order-1 lg:order-1">
-            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight leading-tight text-white lg:text-3xl">
+            <h2 className="text-xl sm:text-2xl font-semibold tracking-tight leading-tight text-white lg:text-4xl">
               A Decentralized Infrastructure Layer
             </h2>
             <p className="mt-4 sm:mt-6 text-sm font-light text-pretty text-white lg:text-base">

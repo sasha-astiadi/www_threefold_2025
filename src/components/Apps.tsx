@@ -21,7 +21,7 @@ const logos = [
 export function AppsPreview() {
   return (
     <div className="relative flex h-[40rem] w-full overflow-hidden rounded-md bg-transparent antialiased md:items-center md:justify-center">
-      <div className="relative z-10 mx-auto w-full max-w-4xl p-4 pt-20 md:pt-0">
+      <div className="relative z-10 mx-auto w-full max-w-4xl p-4 pt-24">
 
         {/* Heading */}
         <motion.div
@@ -67,7 +67,7 @@ export function AppsPreview() {
               }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <Image src={logo} alt="" unoptimized />
+              <Image src={logo} alt="" unoptimized className="hover:backdrop-opacity-100 opacity-90" />
             </motion.div>
           ))}
         </motion.div>
