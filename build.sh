@@ -1,6 +1,9 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 
+# Ensure all shell scripts are executable
+chmod +x *.sh
+
 PREFIX="threefold"
 
 echo "building for folder: /$PREFIX/"
