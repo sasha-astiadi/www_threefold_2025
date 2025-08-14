@@ -2,7 +2,7 @@
 
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Spotlight } from "@/components/ui/spotlight";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { Logomark } from "@/components/Logo";
 import { Button } from "@/components/Button";
 

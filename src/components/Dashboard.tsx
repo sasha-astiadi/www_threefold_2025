@@ -2,6 +2,7 @@
 
 import CountUp from "react-countup";
 import React from "react";
+import { Button } from "./Button";
 
 export function Dashboard() {
   return (
@@ -18,7 +19,7 @@ export function Dashboard() {
               <p className="mt-4 sm:mt-6 text-sm font-light text-pretty text-white lg:text-base">
                 ThreeFold’s groundbreaking technology enables anyone – individuals, organizations, and communities – to deploy their own Internet infrastructure.
               </p>
-              <button className="mt-6" variant="primary" color="transparent" href="https://threefold.io/build" >Explore TFGrid →</button>
+              <Button className="mt-6" variant="solid" color="gradient" href="https://threefold.io/build" >Explore TFGrid →</Button>
             </div>
 
 

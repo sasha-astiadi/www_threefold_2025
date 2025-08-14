@@ -1,6 +1,7 @@
 "use client";
 
 import { StackedCubes } from "@/components/ui/StackedCubes";
+import { Button } from "@/components/Button";
 
 export function StackSectionPreview() {
 
@@ -19,7 +20,7 @@ export function StackSectionPreview() {
             <p className="mt-4 sm:mt-6 text-sm font-light text-pretty text-white lg:text-base">
               We have built a foundational platform that runs directly on bare metal, offering a scalable solution focused on the essential building blocks of the Internet and Cloud: compute, data, and network.
             </p>
-            <button className="mt-4" variant="primary" color="transparent" href="https://threefold.io/build" >Discover How It Works →</button>
+            <Button className="mt-4" variant="solid" color="gradient" href="https://threefold.io/build" >Discover How It Works →</Button>
           </div>
           
           {/* Right Column - Stacked Cubes (2/3 width) */}
