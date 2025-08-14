@@ -1,7 +1,7 @@
 import { useId } from 'react'
 import { SquaresPlusIcon, BeakerIcon, CurrencyDollarIcon, AdjustmentsVerticalIcon, SparklesIcon, ServerStackIcon } from '@heroicons/react/24/solid'
-import Image from 'next/image'
-import AppScreenshot from '@/images/app_screenshot.png'
+import Image from '@/components/Image'
+import AppScreenshot from '/images/app_screenshot.png'
 
 
 import { Container } from '@/components/Container'

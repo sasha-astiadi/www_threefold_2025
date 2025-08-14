@@ -1,9 +1,9 @@
 import { Container } from '@/components/Container'
-import Image from 'next/image'
-import Benefits1 from '@/images/benefits/benefits1.jpg'
-import Benefits2 from '@/images/benefits/benefits2.jpg'
-import Benefits3 from '@/images/benefits/benefits3.jpg'
-import Benefits4 from '@/images/benefits/benefits4.jpg'
+import Image from '@/components/Image'
+import Benefits1 from '/images/benefits/benefits1.jpg'
+import Benefits2 from '/images/benefits/benefits2.jpg'
+import Benefits3 from '/images/benefits/benefits3.jpg'
+import Benefits4 from '/images/benefits/benefits4.jpg'
 
 
 export default function Benefits() {

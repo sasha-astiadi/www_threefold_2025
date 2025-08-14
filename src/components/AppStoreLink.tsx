@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 import clsx from 'clsx'
 
 export function AppStoreLink({
@@ -8,7 +8,7 @@ export function AppStoreLink({
 }) {
   return (
     <Link
-      href="#"
+      to="#"
       aria-label="Download on the App Store"
       className={clsx(
         'rounded-lg transition-colors',

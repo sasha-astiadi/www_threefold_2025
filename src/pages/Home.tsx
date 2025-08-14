@@ -16,7 +16,7 @@ import { AppsPreview } from '@/components/Apps'
 import { FarmerPreview } from '@/components/Farmer'
 
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <SpotlightPreview />
@@ -28,3 +28,5 @@ export default function Home() {
     </>
   )
 }
+
+export default HomePage;

@@ -1,8 +1,8 @@
 'use client'
 
-import Image from 'next/image'
+import Image from '@/components/Image'
 import { Button } from './Button'
-import Engage from '@/images/engage.svg'
+import Engage from '/images/Engage.svg'
 import { gradientText, gradientDark } from '@/components/Gradients'
 
 const navigation = [

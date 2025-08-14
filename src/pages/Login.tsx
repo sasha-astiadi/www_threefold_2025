@@ -1,22 +1,17 @@
-import { type Metadata } from 'next'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 
 import { AuthLayout } from '@/components/AuthLayout'
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
 
-export const metadata: Metadata = {
-  title: 'Sign In',
-}
-
-export default function Login() {
+const LoginPage = () => {
   return (
     <AuthLayout
       title="Sign in to account"
       subtitle={
         <>
           Don’t have an account?{' '}
-          <Link href="/register" className="text-cyan-600">
+          <Link to="/register" className="text-cyan-600">
             Sign up
           </Link>{' '}
           for a free trial.
@@ -47,3 +42,5 @@ export default function Login() {
     </AuthLayout>
   )
 }
+
+export default LoginPage;

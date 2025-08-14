@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -40,11 +39,11 @@ export function Footer() {
           <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors hover:bg-gray-800 sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
             <div className="relative flex h-24 w-24 flex-none items-center justify-center">
               <QrCodeBorder className="absolute inset-0 h-full w-full stroke-gray-600 transition-colors group-hover:stroke-cyan-500" />
-              <Image src={qrCode} alt="" unoptimized />
+              <img src={qrCode} alt="" />
             </div>
             <div className="ml-8 lg:w-64">
               <p className="text-base font-semibold text-white">
-                <Link href="#">
+                <Link to="#">
                   <span className="absolute inset-0 sm:rounded-2xl" />
                   Download the app
                 </Link>

@@ -1,6 +1,4 @@
-'use client'
-
-import Link from 'next/link'
+import { Link } from 'react-router-dom'
 import {
   Popover,
   PopoverButton,
@@ -61,7 +59,7 @@ export function Header() {
       <nav>
         <Container className="relative z-50 flex justify-between py-4">
           <div className="relative z-10 flex items-center gap-16">
-            <Link href="/" aria-label="Home">
+            <Link to="/" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
@@ -108,16 +106,16 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="/#features">
+                            <MobileNavLink to="/#features">
                               Features
                             </MobileNavLink>
-                            <MobileNavLink href="/#reviews">
+                            <MobileNavLink to="/#reviews">
                               Reviews
                             </MobileNavLink>
-                            <MobileNavLink href="/#pricing">
+                            <MobileNavLink to="/#pricing">
                               Pricing
                             </MobileNavLink>
-                            <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink to="/#faqs">FAQs</MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
                             <Button href="/login" variant="outline">

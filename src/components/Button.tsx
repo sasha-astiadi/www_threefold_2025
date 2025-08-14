@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '@/components/Link'
 import clsx from 'clsx'
 
 const baseStyles = {
@@ -33,7 +33,7 @@ type ButtonProps = (
     }
 ) &
   (
-    | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'color'>
+    | Omit<React.ComponentPropsWithoutRef<typeof Link>, 'color' | 'to'> & { href?: string }
     | (Omit<React.ComponentPropsWithoutRef<'button'>, 'color'> & {
         href?: undefined
       })

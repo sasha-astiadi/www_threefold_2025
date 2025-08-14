@@ -1,18 +1,15 @@
-"use client";
-
 import React from "react";
-import Image from 'next/image'
 import { motion } from "framer-motion";
 
 
-import Algorand from '@/images/logos/algorand.svg'
-import Casperlabs from '@/images/logos/casperlabs.svg'
-import Discourse from '@/images/logos/discourse.svg'
-import gitea from '@/images/logos/gitea.svg'
-import Jenkins from '@/images/logos/jenkins.svg'
-import Jitsi from '@/images/logos/jitsi.svg'
-import Mattermost from '@/images/logos/mattermost.svg'
-import Nextcloud from '@/images/logos/nextcloud.svg'
+import Algorand from '/images/logos/algorand.svg'
+import Casperlabs from '/images/logos/casperlabs.svg'
+import Discourse from '/images/logos/discourse.svg'
+import gitea from '/images/logos/gitea.svg'
+import Jenkins from '/images/logos/jenkins.svg'
+import Jitsi from '/images/logos/jitsi.svg'
+import Mattermost from '/images/logos/mattermost.svg'
+import Nextcloud from '/images/logos/nextcloud.svg'
 
 const logos = [
   Algorand, Casperlabs, Discourse, gitea,
@@ -68,7 +65,7 @@ export function AppsPreview() {
               }}
               transition={{ duration: 0.6, ease: "easeOut" }}
             >
-              <Image src={logo} alt="" unoptimized className="hover:backdrop-opacity-100 opacity-90" />
+              <img src={logo} alt="" className="hover:backdrop-opacity-100 opacity-90" />
             </motion.div>
           ))}
         </motion.div>
