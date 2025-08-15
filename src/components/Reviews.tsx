@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import clsx from 'clsx'
 import { useInView } from 'framer-motion'
 
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 
 interface Review {
   title: string
@@ -15,63 +15,63 @@ interface Review {
 
 const reviews: Array<Review> = [
   {
-    title: 'A true game-changer for nonprofits.',
-    body: 'EngageOS allowed us to centralize our volunteer hub, training, and crowdfunding into one platform. We have seen a 3x jump in community engagement.',
-    author: 'Sarah D., Program Director at WomenRise',
+    title: 'Revolutionary decentralized infrastructure.',
+    body: 'ThreeFold enabled us to deploy our Web3 applications with true sovereignty and privacy. The peer-to-peer network is incredibly resilient.',
+    author: 'Alex Chen, CTO at DecentraApps',
     rating: 5,
   },
   {
-    title: 'No tech team needed.',
-    body: 'Launching our own branded platform felt intimidating—until EngageOS. It is intuitive, scalable, and beautifully designed.',
-    author: 'Ahmed K., Director at The Green Schools Alliance',
+    title: 'Easy to start farming.',
+    body: 'Setting up a ThreeFold node was surprisingly simple. Now I\'m earning rewards while contributing to the decentralized internet.',
+    author: 'Maria Rodriguez, Independent Farmer',
     rating: 5,
   },
   {
-    title: 'Empowered our youth programs.',
-    body: 'Thanks to EngageOS, we built a digital home for our learning initiatives with AI-powered content in three languages.',
-    author: 'Maria T., Learning Lead at Global Youth Voices',
+    title: 'True internet ownership.',
+    body: 'Finally, an internet infrastructure that belongs to the people, not corporations. ThreeFold is the future.',
+    author: 'David Kumar, Web3 Developer',
     rating: 5,
   },
   {
-    title: 'Secure and sovereign.',
-    body: 'As a human rights coalition, data privacy is critical. EngageOS is the only platform that met our ethical tech standards.',
-    author: 'Lukas M., CTO at Liberty Commons',
+    title: 'Sustainable and efficient.',
+    body: 'The energy efficiency of ThreeFold nodes compared to traditional cloud infrastructure is remarkable. This is how computing should be done.',
+    author: 'Sarah Thompson, Environmental Tech Advocate',
     rating: 5,
   },
   {
-    title: 'Decentralized. Local-first. Exactly what we needed.',
-    body: 'EngageOS helped us launch a regional platform for community-led health training across East Africa—with full offline access.',
-    author: 'Grace N., Digital Programs at Umoja Health Network',
+    title: 'Perfect for edge computing.',
+    body: 'Deploying AI workloads at the edge has never been easier. ThreeFold\'s distributed architecture is exactly what we needed.',
+    author: 'Dr. James Wilson, AI Research Lab',
     rating: 5,
   },
   {
-    title: 'The best decision we made this year.',
-    body: 'Instead of duct-taping tools together, EngageOS gave us one powerful stack to engage, fundraise, and scale impact.',
-    author: 'Jonas F., COO at Youth in Action Europe',
+    title: 'Community-driven excellence.',
+    body: 'The ThreeFold community is incredibly supportive. From farmers to developers, everyone works together to build something amazing.',
+    author: 'Lisa Park, Blockchain Consultant',
     rating: 5,
   },
   {
-    title: 'Highly recommend for grassroots orgs.',
-    body: 'Even with limited staff, we launched a branded hub in 10 days. It is helping our community organize and train in ways we never imagined.',
-    author: 'Tania B., Founder of SpeakUp Brazil',
+    title: 'Zero-OS is a game changer.',
+    body: 'Running workloads directly on bare metal with Zero-OS eliminates so much complexity while increasing security and performance.',
+    author: 'Miguel Santos, DevOps Engineer',
     rating: 5,
   },
   {
-    title: 'Our community feels seen and heard.',
-    body: 'With EngageOS, we integrated storytelling, campaigns, and microdonations into a single, smooth experience.',
-    author: 'Nicolas R., Communications Lead at OurStories Foundation',
+    title: 'Privacy by design.',
+    body: 'In a world of surveillance capitalism, ThreeFold offers true privacy and data sovereignty. This is what the internet should have been.',
+    author: 'Dr. Emma Johnson, Privacy Researcher',
     rating: 5,
   },
   {
-    title: 'EngageOS scales with us.',
-    body: 'We piloted in 2 cities and now run campaigns across 7 countries—all on the same platform. It grows with our ambition.',
-    author: 'Delphine A., Global Lead at Future Farmers',
+    title: 'Scaling globally.',
+    body: 'We\'ve deployed across 5 continents using ThreeFold. The global reach and local presence is unmatched.',
+    author: 'Robert Kim, Global Infrastructure Lead',
     rating: 5,
   },
   {
-    title: 'This platform is our movement.',
-    body: 'Before EngageOS, our digital presence was scattered. Now we have a true home where our supporters connect and take action.',
-    author: 'Ravi P., Strategy Director at Clean Energy for All',
+    title: 'Building the future together.',
+    body: 'ThreeFold isn\'t just technology - it\'s a movement. We\'re building the internet infrastructure that future generations deserve.',
+    author: 'Priya Patel, Community Builder',
     rating: 5,
   },
 ]
@@ -259,10 +259,10 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-white sm:text-center"
         >
-          Everyone is changing their life with EngageOS.
+          Builders and Farmers Love ThreeFold.
         </h2>
         <p className="mt-2 lg:text-lg text-base text-gray-300 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+          Join thousands of people building and powering the decentralized internet.
         </p>
         <ReviewGrid />
       </Container>

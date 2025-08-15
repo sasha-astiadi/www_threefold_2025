@@ -1,47 +1,53 @@
 import { useId } from 'react'
-import { SquaresPlusIcon, BeakerIcon, CurrencyDollarIcon, AdjustmentsVerticalIcon, SparklesIcon, ServerStackIcon } from '@heroicons/react/24/solid'
+import {
+  CpuChipIcon,
+  ShieldCheckIcon,
+  GlobeAltIcon,
+  BoltIcon,
+  CloudIcon,
+  CubeIcon
+} from '@heroicons/react/24/solid'
 import Image from 'next/image'
-import AppScreenshot from '@/images/app_screenshot.png'
+import AppScreenshot from '../images/app_screenshot.png'
 
-
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 
 const features = [
   {
-    name: 'Engage Supporters with Community Tools.',
+    name: 'Quantum-Safe Storage',
     description:
-      'Inspire action through built-in community tools like forums, comments, and stories that spark meaningful participation.',
-    icon: SquaresPlusIcon,
+      'Revolutionary storage algorithm that disperses data across multiple nodes, making it quantum-safe and unhackable.',
+    icon: ShieldCheckIcon,
   },
   {
-    name: 'Train with AI-powered Learning Paths.',
+    name: 'Zero-OS Operating System',
     description:
-      'Deliver scalable training with AI-powered learning paths, auto-generated content, and multilingual support.',
-    icon: BeakerIcon,
+      'Lightweight OS that runs directly on bare metal, eliminating virtualization overhead and maximizing efficiency.',
+    icon: CpuChipIcon,
   },
   {
-    name: 'Fundraise via Peer & Micro-Donations.',
+    name: 'Planetary Network',
     description:
-      'Empower supporters to fundraise through peer-to-peer campaigns, micro-donations, and integrated payment solutions.',
-    icon: CurrencyDollarIcon,
+      'End-to-end encrypted overlay network that finds the shortest path between any two points on the internet.',
+    icon: GlobeAltIcon,
   },
   {
-    name: 'Measure & Optimize Real-World Impact.',
+    name: 'Energy Efficient',
     description:
-      'Track real impact with dashboards that visualize KPIs, community activity, and field-level data.',
-    icon: AdjustmentsVerticalIcon,
+      'Uses up to 10x less energy than traditional cloud infrastructure through intelligent resource optimization.',
+    icon: BoltIcon,
   },
   {
-    name: 'White-Label Everything.',
+    name: 'Edge Computing Ready',
     description:
-      'Own your brand with a fully customizable platform—your name, your colors, your digital HQ.',
-    icon: SparklesIcon,
+      'Deploy applications at the edge of the internet for ultra-low latency and improved user experience.',
+    icon: CloudIcon,
   },
   {
-    name: 'Robust & Secure Infrastructure.',
+    name: 'Autonomous Operation',
     description:
-      'Host on your terms via decentralized, privacy-respecting infrastructure built for trust and security.',
-    icon: ServerStackIcon,
+      'Self-healing infrastructure that operates autonomously without human intervention or central control.',
+    icon: CubeIcon,
   },
 ]
 
@@ -49,32 +55,21 @@ export function SecondaryFeatures() {
   return (
     <section
       id="secondary-features"
-      aria-label="Features for building a portfolio"
+      aria-label="ThreeFold Technology Features"
       className="pt-24 pb-24"
+      style={{ backgroundColor: '#121212' }}
     >
       <Container>
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h2 className="lg:text-4xl text-3xl font-medium tracking-tight text-gray-900">
-            The Platform Built for Purpose-driven Organizations
+          <h2 className="lg:text-4xl text-3xl font-medium tracking-tight text-white">
+            Revolutionary Technology for a Decentralized Future
           </h2>
-          <p className="mt-4 lg:text-lg text-base text-gray-600">
-            EngageOS is the first plug-and-play engagement infrastructure built for civil society. From Red Cross OS to Montessori OS, any org can launch their own digital headquarters—no tech team needed.
+          <p className="mt-4 lg:text-lg text-base text-gray-300">
+            ThreeFold's groundbreaking technology stack enables true decentralization,
+            sustainability, and sovereignty in internet infrastructure.
           </p>
         </div>
-        <div className="relative overflow-hidden pt-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <Image
-            alt="App screenshot"
-            src={AppScreenshot}
-            width={2432}
-            height={1442}
-            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-          />
-          <div aria-hidden="true" className="relative">
-            <div className="absolute -inset-x-20 bottom-0 bg-linear-to-t from-white pt-[7%]" />
-          </div>
-        </div>
-      </div>
+        
         <ul
           role="list"
           className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-20 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-3"
@@ -82,13 +77,13 @@ export function SecondaryFeatures() {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl border border-gray-200 p-8"
+              className="rounded-2xl border border-gray-700 bg-gray-900 p-8"
             >
-              <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900">
+              <feature.icon className="h-8 w-8 text-cyan-400" />
+              <h3 className="mt-6 font-semibold text-white">
                 {feature.name}
               </h3>
-              <p className="mt-2 text-gray-700">{feature.description}</p>
+              <p className="mt-2 text-gray-300">{feature.description}</p>
             </li>
           ))}
         </ul>

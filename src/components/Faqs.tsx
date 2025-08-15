@@ -1,80 +1,80 @@
-import { Container } from '@/components/Container'
+import { Container } from '../components/Container'
 
 const faqs = [
   [
     {
-      question: 'What is EngageOS?',
+      question: 'What is ThreeFold?',
       answer:
-        'EngageOS is a white-label engagement platform built specifically for purpose-driven organizations. It allows NGOs, foundations, and impact coalitions to launch their own branded platforms to engage communities, deliver training, and mobilize support.',
+        'ThreeFold is building the world\'s largest decentralized internet infrastructure. It\'s a peer-to-peer network of compute, storage, and network capacity owned and operated by independent farmers worldwide.',
     },
     {
-      question: 'Do I need a tech team to use EngageOS?',
+      question: 'How is ThreeFold different from traditional cloud?',
       answer:
-        'No. EngageOS is fully plug-and-play. It’s designed so any organization—regardless of technical capacity—can deploy and customize their own platform without writing a line of code.',
+        'Unlike centralized cloud providers, ThreeFold is fully decentralized, uses up to 10x less energy, provides quantum-safe security, and gives you complete data sovereignty.',
     },
     {
-      question: 'Can we fully customize the platform’s look and feel?',
+      question: 'What can I build on ThreeFold?',
       answer:
-        'Absolutely. From logos and colors to navigation and community features, EngageOS supports full white-label customization so the platform feels like your own digital headquarters.',
-    },
-  ],
-  [
-    {
-      question: 'What kinds of organizations use EngageOS?',
-      answer:
-        'We work with NGOs, educational networks, development agencies, faith-based groups, and mission-aligned coalitions that want to better engage, train, and mobilize their communities at scale.',
-    },
-    {
-      question: 'Is EngageOS multilingual and accessible offline?',
-      answer:
-        'Yes. The platform supports multilingual content and offline-friendly delivery—ideal for reaching underserved communities with limited connectivity.',
-    },
-    {
-      question: 'Can we use EngageOS for fundraising?',
-      answer:
-        'Yes. EngageOS includes built-in fundraising tools, including peer-to-peer, micro-donation, and pay-it-forward models—plus full donor engagement capabilities.',
+        'Anything that runs on Linux can run on ThreeFold - from simple websites to complex AI workloads, blockchain nodes, IoT applications, and enterprise solutions.',
     },
   ],
   [
     {
-      question: 'How is EngageOS different from other platforms?',
+      question: 'How do I become a ThreeFold farmer?',
       answer:
-        'Unlike general-purpose platforms, EngageOS is mission-built for civil society. It integrates engagement, learning, and fundraising in one secure, ethical platform—hosted on sovereign infrastructure.',
+        'Simply boot any modern computer with our Zero-OS image. Once connected to the internet, your node will automatically join the grid and start earning TFT rewards.',
     },
     {
-      question: 'What is the pricing model?',
+      question: 'What are ThreeFold Tokens (TFT)?',
       answer:
-        'EngageOS operates on a flexible SaaS model, with plans ranging from €30K to €300K annually depending on features and user scale. For grassroots initiatives, pay-it-forward and sponsorship models are also available.',
+        'TFT is the native currency of the ThreeFold ecosystem. Farmers earn TFT for providing capacity, and users spend TFT to deploy workloads on the grid.',
     },
     {
-      question: 'How do we get started?',
+      question: 'Is ThreeFold secure?',
       answer:
-        'Reach out to our team for a demo or strategy session. We’ll walk you through the options and help design the best deployment path for your mission.',
+        'Yes, ThreeFold uses quantum-safe storage algorithms, end-to-end encryption, and a zero-trust security model. Data is dispersed across multiple nodes making it virtually impossible to hack.',
+    },
+  ],
+  [
+    {
+      question: 'How much does it cost to use ThreeFold?',
+      answer:
+        'Pricing is transparent and competitive with traditional cloud providers, but with added benefits of decentralization and data sovereignty. Check our calculator for specific pricing.',
+    },
+    {
+      question: 'Where is ThreeFold available?',
+      answer:
+        'ThreeFold operates globally with nodes in over 50 countries. The decentralized nature means you can deploy close to your users anywhere in the world.',
+    },
+    {
+      question: 'How do I get started?',
+      answer:
+        'Visit our Grid portal to start building, or check out our farming guide to contribute capacity. Our community is always ready to help newcomers.',
     },
   ],
 ]
-
 
 export function Faqs() {
   return (
     <section
       id="faqs"
       aria-labelledby="faqs-title"
-      className="border-t border-gray-200 py-20 sm:py-32"
+      className="border-t border-gray-800 py-20 sm:py-32"
+      style={{ backgroundColor: '#121212' }}
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faqs-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-3xl font-medium tracking-tight text-white"
           >
             Frequently asked questions
           </h2>
-          <p className="mt-2 lg:text-lg text-base text-gray-600">
+          <p className="mt-2 lg:text-lg text-base text-gray-300">
             If you have anything else you want to ask,{' '}
             <a
-              href="mailto:info@example.com"
-              className="text-gray-900 underline"
+              href="mailto:info@threefold.io"
+              className="text-cyan-400 hover:text-cyan-300 underline"
             >
               reach out to us
             </a>
@@ -90,10 +90,10 @@ export function Faqs() {
               <ul role="list" className="space-y-10">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="lg:text-lg text-base/6 font-semibold text-gray-900">
+                    <h3 className="lg:text-lg text-base/6 font-semibold text-white">
                       {faq.question}
                     </h3>
-                    <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
+                    <p className="mt-4 text-sm text-gray-300">{faq.answer}</p>
                   </li>
                 ))}
               </ul>

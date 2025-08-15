@@ -9,10 +9,12 @@ import {
 } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
+import { Button } from '../components/Button'
+import { Container } from '../components/Container'
+import { Logo } from '../components/Logo'
+import { NavLinks } from '../components/NavLinks'
+
+// ... keep the icon components same
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -108,22 +110,27 @@ export function Header() {
                           className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                         >
                           <div className="space-y-4">
-                            <MobileNavLink href="/#features">
-                              Features
+                            <MobileNavLink href="/technology">
+                              Technology
                             </MobileNavLink>
-                            <MobileNavLink href="/#reviews">
-                              Reviews
+                            <MobileNavLink href="/grid">
+                              Grid Status
                             </MobileNavLink>
-                            <MobileNavLink href="/#pricing">
-                              Pricing
+                            <MobileNavLink href="/farming">
+                              Farming
                             </MobileNavLink>
-                            <MobileNavLink href="/#faqs">FAQs</MobileNavLink>
+                            <MobileNavLink href="/build">
+                              Build
+                            </MobileNavLink>
+                            <MobileNavLink href="/community">
+                              Community
+                            </MobileNavLink>
                           </div>
                           <div className="mt-8 flex flex-col gap-4">
-                            <Button href="/login" variant="outline">
-                              Log in
+                            <Button href="https://threefold.io/build" variant="outline">
+                              Start Building
                             </Button>
-                            <Button href="#">Download the app</Button>
+                            <Button href="https://threefold.io/farm">Start Farming</Button>
                           </div>
                         </PopoverPanel>
                       </>
@@ -133,10 +140,10 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
-              <Button href="/login" variant="outline">
-                Log in
+              <Button href="https://threefold.io/build" variant="outline">
+                Start Building
               </Button>
-              <Button href="#">Download</Button>
+              <Button href="https://threefold.io/farm">Start Farming</Button>
             </div>
           </div>
         </Container>

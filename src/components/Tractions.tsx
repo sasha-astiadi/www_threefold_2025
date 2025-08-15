@@ -1,20 +1,20 @@
 import Image from "next/image"
-import Traction from "@/images/tractions/tractions.jpg"
-import logoForbes from "@/images/logos/forbes.svg"
-import logoTechcrunch from "@/images/logos/techcrunch.svg"
-import logoWired from "@/images/logos/wired.svg"
-import logoCnn from "@/images/logos/cnn.svg"
-import logoBbc from "@/images/logos/bbc.svg"
-import logoCbs from "@/images/logos/cbs.svg"
-import logoFastCompany from "@/images/logos/fast-company.svg"
-import logoHuffpost from "@/images/logos/huffpost.svg"
-import clsx from "clsx"
+import Traction from '../images/tractions/tractions.jpg'
+import logoForbes from '../images/logos/forbes.svg'
+import logoTechcrunch from '../images/logos/techcrunch.svg'
+import logoWired from '../images/logos/wired.svg'
+import logoCnn from '../images/logos/cnn.svg'
+import logoBbc from '../images/logos/bbc.svg'
+import logoCbs from '../images/logos/cbs.svg'
+import logoFastCompany from '../images/logos/fast-company.svg'
+import logoHuffpost from '../images/logos/huffpost.svg'
+import clsx from 'clsx'
 
 const stats = [
-  { id: 1, name: 'Raised in sponsorship.', value: '7M+' },
-  { id: 2, name: 'Views from educational partners.', value: '3B+' },
-  { id: 3, name: 'Users deployed.', value: '300K' },
-  { id: 4, name: 'Revenues paid to NGOs', value: '$70M' },
+  { id: 1, name: 'Nodes deployed globally', value: '1,800+' },
+  { id: 2, name: 'Countries with active farmers', value: '50+' },
+  { id: 3, name: 'Total compute capacity (cores)', value: '100K+' },
+  { id: 4, name: 'Total storage capacity (TB)', value: '500TB+' },
 ]
 
 export default function Tractions() {
@@ -56,12 +56,12 @@ export default function Tractions() {
         {/* RIGHT TEXT BLOCK */}
         <div className="px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
-            <h2 className="text-base/8 font-semibold text-white">Our track record</h2>
+            <h2 className="text-base/8 font-semibold text-white">Our Global Footprint</h2>
             <p className="mt-2 text-3xl font-medium tracking-tight text-white sm:text-4xl">
-              Trusted by Changemakers worldwide
+              Powering the Decentralized Internet Worldwide
             </p>
             <p className="mt-6 lg:text-lg text-base text-gray-300">
-                EngageOS powers the digital headquarters for over 300,000 users across 50+ countries. From grassroots NGOs to global movements, our platform is built to scale impact, not just numbers.
+                ThreeFold is building the world's largest peer-to-peer internet infrastructure, with active nodes and farmers spanning the globe. Join our decentralized network.
             </p>
             <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
               {stats.map((stat) => (

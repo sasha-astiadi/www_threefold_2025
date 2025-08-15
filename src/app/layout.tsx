@@ -2,7 +2,7 @@ import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import clsx from 'clsx'
 
-import '@/styles/tailwind.css'
+import '../styles/tailwind.css'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -12,11 +12,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - EngageOS',
-    default: 'EngageOS - Invest at the perfect time.',
+    template: '%s - ThreeFold',
+    default: 'ThreeFold - Decentralized Internet Infrastructure',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'ThreeFold is building a decentralized internet infrastructure owned and operated by the people. Join the movement to create a more sovereign, sustainable, and accessible internet for all.',
+  keywords: 'decentralized internet, blockchain, Web3, cloud infrastructure, sovereign technology',
 }
 
 export default function RootLayout({

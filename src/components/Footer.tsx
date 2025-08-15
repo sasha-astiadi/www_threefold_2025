@@ -1,12 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { TextField } from '@/components/Fields'
-import { Logomark } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
-
+import { Button } from '../components/Button'
+import { Container } from '../components/Container'
+import { TextField } from '../components/Fields'
+import { Logomark } from '../components/Logo'
+import { NavLinks } from '../components/NavLinks'
 function QrCodeBorder(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 96 96" fill="none" aria-hidden="true" {...props}>
@@ -28,8 +27,8 @@ export function Footer() {
             <div className="flex items-center text-white">
               <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
-                <p className="text-base font-semibold">EngageOS</p>
-                <p className="mt-1 text-sm">Empowering Purpose-Driven Organizations.</p>
+                <p className="text-base font-semibold">ThreeFold</p>
+                <p className="mt-1 text-sm">Building the Decentralized Internet.</p>
               </div>
             </div>
             <nav className="mt-11 flex gap-8">
@@ -53,7 +52,7 @@ export function Footer() {
             </Button>
           </form>
           <p className="mt-6 text-sm text-gray-400 md:mt-0">
-            &copy; Copyright {new Date().getFullYear()}. All rights reserved.
+            &copy; Copyright {new Date().getFullYear()} ThreeFold. All rights reserved.
           </p>
         </div>
       </Container>
