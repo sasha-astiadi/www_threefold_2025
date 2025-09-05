@@ -2,45 +2,58 @@
 import { Button } from "./Button";
 import Image from "next/image";
 
-import { CpuChipIcon } from "@heroicons/react/24/solid";
-import { CircleStackIcon } from "@heroicons/react/24/solid";
-import { CurrencyDollarIcon } from "@heroicons/react/24/solid";
-
-const posts = [
+const products = [
   {
     id: 1,
-    title: 'Host A Node',
-    href: '#',
-    description1:
-      'All you need to get started is a modern computer, electricity and network. Once booted with Zero OS, a computer becomes a ThreeFold Node.',
-    description2: '',
-    imageUrl:
-      './images/3nodes.png',
-    icon: <CpuChipIcon className="h-6 w-6 text-white" />,
-    },
-    {
+    colSpan: "lg:col-span-3",
+    rounded: "rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]",
+    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-performance.png",
+    title: "3Nodes",
+    desc: "The backbone of storage and infrastructure, providing compute and data resources.",
+    color: "indigo-400",
+    bgRounded: "max-lg:rounded-t-4xl lg:rounded-tl-4xl"
+  },
+  {
     id: 2,
-    title: 'Offer Capacity',
-    href: '#',
-    description1: 'The capacity of the node gets registered on the ThreeFold Blockchain and is available for users on the TF Marketplace.',
-      description2: '',
-    imageUrl:
-      './images/capacity.png',
-    icon: <CircleStackIcon className="h-6 w-6 text-white" />,
-    },
-    {
+    colSpan: "lg:col-span-3",
+    rounded: "rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]",
+    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-releases.png",
+    title: "`Mycelium`",
+    desc: "Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.",
+    color: "indigo-400",
+    bgRounded: "lg:rounded-tr-4xl"
+  },
+  {
     id: 3,
-    title: 'Earn Rewards',
-    href: '#',
-    description1:
-      'Farmers earn rewards for their used resources, enabling a fair and transparent peer-to-peer economy.',
-      description2: '',
-    imageUrl:
-      './images/rewards.png',
-    icon: <CurrencyDollarIcon className="h-6 w-6 text-white" />,
-    },
-]
-
+    colSpan: "lg:col-span-2",
+    rounded: "rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]",
+    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-speed.png",
+    title: "AiBox",
+    desc: "Sed congue eros non finibus molestie. Vestibulum euismod augue.",
+    color: "indigo-400",
+    bgRounded: "lg:rounded-bl-4xl"
+  },
+  {
+    id: 4,
+    colSpan: "lg:col-span-2",
+    rounded: "rounded-[calc(var(--radius-lg)+1px)]",
+    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-integrations.png",
+    title: "3Phone",
+    desc: "Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.",
+    color: "indigo-400",
+    bgRounded: ""
+  },
+  {
+    id: 5,
+    colSpan: "lg:col-span-2",
+    rounded: "rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]",
+    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-network.png",
+    title: "3Router",
+    desc: "Aenean vulputate justo commodo auctor vehicula in malesuada semper.",
+    color: "indigo-400",
+    bgRounded: "max-lg:rounded-b-4xl lg:rounded-br-4xl"
+  }
+];
 
 export function ProductsPreview() {
 
@@ -69,34 +82,25 @@ export function ProductsPreview() {
             </Button>
           </div>
         </div>
-        <div className="mx-auto  mt-10 grid max-w-2xl h-3/4 grid-cols-1 gap-8 lg:mt-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
-            <article
-              key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-state-gradient px-8 lg:pt-12"
-            >
-              <div className="absolute inset-0 -z-10 bg-linear-to-t from-gray-200 via-gray-300/10" 
-              style={{
-                    filter: 'brightness(1)',
-                }}
-                onMouseEnter={(e) => {
-                    e.currentTarget.style.filter = 'brightness(0.8) drop-shadow(0 0 20px rgba(156, 163, 175, 0.5))';
-                }}
-                onMouseLeave={(e) => {
-                    e.currentTarget.style.filter = 'brightness(1)';
-                }}
-                >
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+          {products.map(product => (
+            <div key={product.id} className={`relative ${product.colSpan}`}>
+              <div className={`absolute inset-0 rounded-lg bg-gray-100 ${product.bgRounded}`} />
+              <div className={`relative flex h-full flex-col overflow-hidden ${product.rounded}`}>
+                <img
+                  alt={`${product.title} screenshot`}
+                  src={product.img}
+                  className={`h-80 object-cover ${product.id === 2 ? 'object-left lg:object-right' : 'object-left'}`}
+                />
+                <div className="p-10 pt-4">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-white">{product.title}</p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-700">
+                    {product.desc}
+                  </p>
                 </div>
-                <div className="mt-12 flex items-start gap-x-3 text-lg/6 font-semibold text-white">
-                    {post.icon}
-                    {post.title}
-                </div>  
-                < div className="max-w-2/3">
-                <p className="mt-4 text-sm font-light text-gray-700">{post.description1}</p>
-                <p className=" text-sm font-light text-gray-700">{post.description2}</p>
-                </div>
-                <img alt="" src={post.imageUrl} className="w-1/2 h-full translate-x-20 -translate-32 transform object-cover object-top-left lg:translate-x-50  lg:-translate-20 opacity-70 hover:opacity-95" />
-            </article>
+              </div>
+              <div className={`pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 ${product.bgRounded}`} />
+            </div>
           ))}
         </div>
       </div>
