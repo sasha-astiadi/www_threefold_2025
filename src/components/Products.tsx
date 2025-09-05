@@ -7,7 +7,7 @@ const products = [
     id: 1,
     colSpan: "lg:col-span-3",
     rounded: "rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]",
-    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-performance.png",
+    img: "/images/3nodes.png",
     title: "3Nodes",
     desc: "The backbone of storage and infrastructure, providing compute and data resources.",
     color: "indigo-400",
@@ -17,9 +17,9 @@ const products = [
     id: 2,
     colSpan: "lg:col-span-3",
     rounded: "rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]",
-    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-releases.png",
-    title: "`Mycelium`",
-    desc: "Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.",
+    img: "/images/mycelium.svg",
+    title: "Mycelium",
+    desc: "End-to-end encrypted overlay network, always looking for the shortest possible path between participants",
     color: "indigo-400",
     bgRounded: "lg:rounded-tr-4xl"
   },
@@ -27,9 +27,9 @@ const products = [
     id: 3,
     colSpan: "lg:col-span-2",
     rounded: "rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]",
-    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-speed.png",
-    title: "AiBox",
-    desc: "Sed congue eros non finibus molestie. Vestibulum euismod augue.",
+    img: "/images/3nodes.png",
+    title: "AIBox",
+    desc: "A self-hosted AI compute solution powered by ThreeFold.",
     color: "indigo-400",
     bgRounded: "lg:rounded-bl-4xl"
   },
@@ -37,9 +37,9 @@ const products = [
     id: 4,
     colSpan: "lg:col-span-2",
     rounded: "rounded-[calc(var(--radius-lg)+1px)]",
-    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-integrations.png",
+    img: "/images/3nodes.png",
     title: "3Phone",
-    desc: "Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.",
+    desc: "OwnPhone is the first secure device in the 3Phone family designed to work seamlessly with the ThreeFold Grid.",
     color: "indigo-400",
     bgRounded: ""
   },
@@ -47,9 +47,9 @@ const products = [
     id: 5,
     colSpan: "lg:col-span-2",
     rounded: "rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]",
-    img: "https://tailwindcss.com/plus-assets/img/component-images/dark-bento-01-network.png",
+    img: "/images/3nodes.png",
     title: "3Router",
-    desc: "Aenean vulputate justo commodo auctor vehicula in malesuada semper.",
+    desc: "Smart routers ensure shortest-path connections between nodes and phones with end-to-end encryption.",
     color: "indigo-400",
     bgRounded: "max-lg:rounded-b-4xl lg:rounded-br-4xl"
   }
@@ -86,15 +86,17 @@ export function ProductsPreview() {
           {products.map(product => (
             <div key={product.id} className={`relative ${product.colSpan}`}>
               <div className={`absolute inset-0 rounded-lg bg-gray-100 ${product.bgRounded}`} />
-              <div className={`relative flex h-full flex-col overflow-hidden ${product.rounded}`}>
-                <img
-                  alt={`${product.title} screenshot`}
-                  src={product.img}
-                  className={`h-80 object-cover ${product.id === 2 ? 'object-left lg:object-right' : 'object-left'}`}
-                />
-                <div className="p-10 pt-4">
-                  <p className="mt-2 text-lg font-medium tracking-tight text-white">{product.title}</p>
-                  <p className="mt-2 max-w-lg text-sm/6 text-gray-700">
+              <div className={`relative flex h-full flex-col lg:flex-row overflow-hidden ${product.rounded}`}>
+                <div className="flex justify-center items-center h-15 lg:h-40 lg:w-1/4 p-2">
+                  <img
+                    alt={`${product.title} screenshot`}
+                    src={product.img}
+                    className="w-full lg:w-full h-full object-contain p-2"
+                  />
+                </div>
+                <div className="p-4 flex-1 flex flex-col justify-center">
+                  <p className="lg:mt-0 mt-4 text-lg lg:text-xl font-medium tracking-tight text-white">{product.title}</p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
                     {product.desc}
                   </p>
                 </div>
