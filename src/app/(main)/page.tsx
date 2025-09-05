@@ -15,6 +15,7 @@ import { Dashboard } from '@/components/Dashboard'
 import { AppsPreview } from '@/components/Apps'
 import { FarmerPreview } from '@/components/Farmer'
 import { TfDashboard } from '@/components/TfDashboard'
+import { ProductsPreview } from '@/components/Products'
 
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <FarmerPreview />
       <TfDashboard />
       <AppsPreview />
+      <ProductsPreview />
 
     </>
   )
