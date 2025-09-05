@@ -28,7 +28,7 @@ export function Footer() {
             <div className="flex items-center text-white">
               <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
-                <p className="text-base font-semibold">EngageOS</p>
+                <p className="text-base font-semibold">ThreeFold</p>
                 <p className="mt-1 text-sm">Empowering Purpose-Driven Organizations.</p>
               </div>
             </div>

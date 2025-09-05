@@ -61,7 +61,7 @@ export default function Tractions() {
               Trusted by Changemakers worldwide
             </p>
             <p className="mt-6 lg:text-lg text-base text-gray-300">
-                EngageOS powers the digital headquarters for over 300,000 users across 50+ countries. From grassroots NGOs to global movements, our platform is built to scale impact, not just numbers.
+                ThreeFold powers the digital headquarters for over 300,000 users across 50+ countries. From grassroots NGOs to global movements, our platform is built to scale impact, not just numbers.
             </p>
             <dl className="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
               {stats.map((stat) => (

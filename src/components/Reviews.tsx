@@ -16,37 +16,37 @@ interface Review {
 const reviews: Array<Review> = [
   {
     title: 'A true game-changer for nonprofits.',
-    body: 'EngageOS allowed us to centralize our volunteer hub, training, and crowdfunding into one platform. We have seen a 3x jump in community engagement.',
+    body: 'ThreeFold allowed us to centralize our volunteer hub, training, and crowdfunding into one platform. We have seen a 3x jump in community engagement.',
     author: 'Sarah D., Program Director at WomenRise',
     rating: 5,
   },
   {
     title: 'No tech team needed.',
-    body: 'Launching our own branded platform felt intimidating—until EngageOS. It is intuitive, scalable, and beautifully designed.',
+    body: 'Launching our own branded platform felt intimidating—until ThreeFold. It is intuitive, scalable, and beautifully designed.',
     author: 'Ahmed K., Director at The Green Schools Alliance',
     rating: 5,
   },
   {
     title: 'Empowered our youth programs.',
-    body: 'Thanks to EngageOS, we built a digital home for our learning initiatives with AI-powered content in three languages.',
+    body: 'Thanks to ThreeFold, we built a digital home for our learning initiatives with AI-powered content in three languages.',
     author: 'Maria T., Learning Lead at Global Youth Voices',
     rating: 5,
   },
   {
     title: 'Secure and sovereign.',
-    body: 'As a human rights coalition, data privacy is critical. EngageOS is the only platform that met our ethical tech standards.',
+    body: 'As a human rights coalition, data privacy is critical. ThreeFold is the only platform that met our ethical tech standards.',
     author: 'Lukas M., CTO at Liberty Commons',
     rating: 5,
   },
   {
     title: 'Decentralized. Local-first. Exactly what we needed.',
-    body: 'EngageOS helped us launch a regional platform for community-led health training across East Africa—with full offline access.',
+    body: 'ThreeFold helped us launch a regional platform for community-led health training across East Africa—with full offline access.',
     author: 'Grace N., Digital Programs at Umoja Health Network',
     rating: 5,
   },
   {
     title: 'The best decision we made this year.',
-    body: 'Instead of duct-taping tools together, EngageOS gave us one powerful stack to engage, fundraise, and scale impact.',
+    body: 'Instead of duct-taping tools together, ThreeFold gave us one powerful stack to engage, fundraise, and scale impact.',
     author: 'Jonas F., COO at Youth in Action Europe',
     rating: 5,
   },
@@ -58,19 +58,19 @@ const reviews: Array<Review> = [
   },
   {
     title: 'Our community feels seen and heard.',
-    body: 'With EngageOS, we integrated storytelling, campaigns, and microdonations into a single, smooth experience.',
+    body: 'With ThreeFold, we integrated storytelling, campaigns, and microdonations into a single, smooth experience.',
     author: 'Nicolas R., Communications Lead at OurStories Foundation',
     rating: 5,
   },
   {
-    title: 'EngageOS scales with us.',
+    title: 'ThreeFold scales with us.',
     body: 'We piloted in 2 cities and now run campaigns across 7 countries—all on the same platform. It grows with our ambition.',
     author: 'Delphine A., Global Lead at Future Farmers',
     rating: 5,
   },
   {
     title: 'This platform is our movement.',
-    body: 'Before EngageOS, our digital presence was scattered. Now we have a true home where our supporters connect and take action.',
+    body: 'Before ThreeFold, our digital presence was scattered. Now we have a true home where our supporters connect and take action.',
     author: 'Ravi P., Strategy Director at Clean Energy for All',
     rating: 5,
   },
@@ -259,7 +259,7 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-white sm:text-center"
         >
-          Everyone is changing their life with EngageOS.
+          Everyone is changing their life with ThreeFold.
         </h2>
         <p className="mt-2 lg:text-lg text-base text-gray-300 sm:text-center">
           Thousands of people have doubled their net-worth in the last 30 days.

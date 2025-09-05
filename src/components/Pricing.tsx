@@ -25,7 +25,7 @@ const plans = [
       'Basic learning paths',
       'Donations & campaigns',
       'Your logo & colors',
-      'EngageOS subdomain (yourname.engageos.org)',
+      'ThreeFold subdomain (yourname.ThreeFold.org)',
       'Email support',
     ],
     logomarkClassName: 'fill-gray-300',

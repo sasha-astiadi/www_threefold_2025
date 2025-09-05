@@ -17,5 +17,3 @@ pnpm run build
 # local mirror (optional)
 # rsync -rav --delete dist/ "${HOME}/hero/var/www/$PREFIX/"
 
-# deploy to threefold server
-rsync -avz --delete out/ "root@threefold.info:/root/hero/www/info/$PREFIX/"

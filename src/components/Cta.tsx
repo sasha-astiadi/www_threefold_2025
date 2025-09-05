@@ -7,7 +7,7 @@ export default function Cta() {
             Scale Your Impact, Not Your Costs
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-300">
-            EngageOS gives purpose-driven teams the power to mobilize communities, grow movements, and fundraise faster—
+            ThreeFold gives purpose-driven teams the power to mobilize communities, grow movements, and fundraise faster—
             all from one unified platform.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
