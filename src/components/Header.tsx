@@ -73,7 +73,7 @@ export function Header() {
               {({ open }) => (
                 <>
                   <PopoverButton
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-white p-2 hover:bg-gray-800/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-white"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-white p-2 hover:bg-transparent hover:stroke-gray-200 focus:not-data-focus:outline-hidden active:stroke-white"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
@@ -134,9 +134,11 @@ export function Header() {
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
               <Button href="/login" variant="outline">
-                Log in
+                Info
               </Button>
-              <Button href="#">Download</Button>
+              <Button href="#" variant="solid" color="white">
+                Participate
+              </Button>
             </div>
           </div>
         </Container>

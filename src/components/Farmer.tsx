@@ -61,7 +61,7 @@ export function FarmerPreview() {
             </div>
           {/* Right Column - Stacked Cubes (2/3 width) */}
           <div className="lg:col-span-2 flex items-center justify-center lg:justify-start order-2 lg:order-2">
-            <Button variant="outline" className=" text-black px-4 py-2 rounded-md hover:bg-gray-700 transition-colors">
+            <Button variant="outline">
               Become A Farmer
             </Button>
           </div>

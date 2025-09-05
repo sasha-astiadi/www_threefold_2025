@@ -14,6 +14,7 @@ import GlobeDemo from '@/components/GlobeDemo'
 import { Dashboard } from '@/components/Dashboard'
 import { AppsPreview } from '@/components/Apps'
 import { FarmerPreview } from '@/components/Farmer'
+import { TfDashboard } from '@/components/TfDashboard'
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <StackSectionPreview />
       <Dashboard />
       <FarmerPreview />
+      <TfDashboard />
       <AppsPreview />
 
     </>

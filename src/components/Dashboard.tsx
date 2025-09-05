@@ -19,7 +19,7 @@ export function Dashboard() {
               <p className="mt-4 sm:mt-6 text-sm font-light text-pretty text-white lg:text-base">
                 ThreeFold’s groundbreaking technology enables anyone – individuals, organizations, and communities – to deploy their own Internet infrastructure.
               </p>
-              <Button className="mt-6" variant="solid" color="gradient" href="https://threefold.io/build" >Explore TFGrid →</Button>
+              <Button className="mt-8" variant="outline" href="https://threefold.io/build" >Explore TFGrid →</Button>
             </div>
 
 
