@@ -29,10 +29,10 @@ export function Footer() {
               <Logomark className="h-10 w-10 flex-none fill-cyan-500" />
               <div className="ml-4">
                 <p className="text-base font-semibold">ThreeFold</p>
-                <p className="mt-1 text-sm">Empowering Purpose-Driven Organizations.</p>
+                <p className="mt-1 text-sm">Decentralized internet infrastructure by everyone, for everyone.</p>
               </div>
             </div>
-            <nav className="mt-11 flex gap-8">
+            <nav className="mt-8 flex gap-8">
               <NavLinks />
             </nav>
           </div>
@@ -47,7 +47,7 @@ export function Footer() {
               required
               className="w-60 min-w-0 shrink"
             />
-            <Button type="submit" color="cyan" className="ml-4 flex-none">
+            <Button type="submit"  variant='glass' className="ml-4 flex-none">
               <span className="hidden lg:inline">Join our newsletter</span>
               <span className="lg:hidden">Join newsletter</span>
             </Button>

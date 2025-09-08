@@ -4,6 +4,8 @@ import clsx from 'clsx'
 const baseStyles = {
   solid:
     'inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold transition-colors',
+  glass:
+    'rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/15',
   outline:
     'inline-flex justify-center rounded-lg border py-[calc(--spacing(2)-1px)] px-[calc(--spacing(3)-1px)] text-sm transition-colors',
 }
@@ -11,7 +13,7 @@ const baseStyles = {
 const variantStyles = {
   solid: {
     gradient:
-      'bg-gradient-to-r from-[#caa5f0] via-[#8f79f9] to-[#3c82f5] text-white hover:brightness-110 active:brightness-95',
+      'btn-new-gradient',
     cyan: 'relative overflow-hidden bg-cyan-500 text-white before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-cyan-600 active:text-white/80 before:transition-colors',
     white:
       'bg-white text-black hover:bg-white/90 active:bg-white/90 active:text-gray-400',
@@ -28,6 +30,9 @@ type ButtonProps = (
       color?: keyof typeof variantStyles.solid
     }
   | {
+      variant: 'glass'
+    }
+  | {
       variant: 'outline'
       color?: keyof typeof variantStyles.outline
     }
@@ -41,15 +46,22 @@ type ButtonProps = (
 
 export function Button({ className, ...props }: ButtonProps) {
   props.variant ??= 'solid'
-  props.color ??= 'gray'
+
+  if (props.variant !== 'glass') {
+    props.color ??= 'gray'
+  }
+
+  let variantClass: string | undefined = undefined
+
+  if (props.variant === 'outline' && props.color) {
+    variantClass = variantStyles.outline[props.color]
+  } else if (props.variant === 'solid' && props.color) {
+    variantClass = variantStyles.solid[props.color]
+  }
 
   className = clsx(
     baseStyles[props.variant],
-    props.variant === 'outline'
-      ? variantStyles.outline[props.color]
-      : props.variant === 'solid'
-        ? variantStyles.solid[props.color]
-        : undefined,
+    variantClass,
     className,
   )
 

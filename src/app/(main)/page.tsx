@@ -1,5 +1,4 @@
 import { CallToAction } from '@/components/CallToAction'
-import { Faqs } from '@/components/Faqs'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
@@ -16,6 +15,8 @@ import { AppsPreview } from '@/components/Apps'
 import { FarmerPreview } from '@/components/Farmer'
 import { TfDashboard } from '@/components/TfDashboard'
 import { ProductsPreview } from '@/components/Products'
+import { CallTo } from '@/components/CallTo'
+import { Faqss } from '@/components/Faqs'
 
 
 export default function Home() {
@@ -28,7 +29,8 @@ export default function Home() {
       <TfDashboard />
       <AppsPreview />
       <ProductsPreview />
-
+      <CallTo />
+      <Faqss />
     </>
   )
 }

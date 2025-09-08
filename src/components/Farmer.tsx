@@ -47,7 +47,7 @@ export function FarmerPreview() {
   return (
     <section className="w-full bg-transparent px-4 py-8 sm:px-6 mt-12 sm:pb-12 lg:px-8 relative">
     {/* Gradient Blob Component */}
-      <div className="absolute w-[400px] h-[200px] bg-gradient-to-br from-[#505050] to-[#7e7e7e] opacity-40 rounded-full blur-[150px] bottom-[200px] left-[-150px] z-0" />
+      <div className="absolute w-[400px] h-[200px] bg-gradient-to-br from-[#535353] to-[#7e7e7e] opacity-60 rounded-full blur-[150px] bottom-[200px] left-[-150px] z-0" />
       <div className="absolute w-[200px] h-[100px] bg-gradient-to-br from-[#505050] to-[#7e7e7e] opacity-50 rounded-full blur-[150px] top-[200px] right-[-150px] z-0" />
       <div className="mx-auto max-w-7xl">
         <div className="lg:flex lg:items-center lg:justify-between lg:px-8">
@@ -70,7 +70,7 @@ export function FarmerPreview() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-state-gradient px-8 lg:pt-12"
+              className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-stat-gradient px-8 lg:pt-12"
             >
               <div className="absolute inset-0 -z-10 bg-linear-to-t from-gray-200 via-gray-300/10" 
               style={{

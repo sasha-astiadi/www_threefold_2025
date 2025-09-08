@@ -38,7 +38,7 @@ export function SpotlightPreview() {
           ThreeFold is a fully operational, decentralized internet infrastructure – deployed locally, scalable globally, and owned and powered by the people.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-          <Button href="/login" variant="outline" color="gray">
+          <Button href="/login" variant="glass">
             Start Building
           </Button>
           <Button href="#" variant="outline" color="gray">

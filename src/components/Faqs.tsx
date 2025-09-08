@@ -55,7 +55,7 @@ const faqs = [
 ]
 
 
-export function Faqs() {
+export function Faqss () {
   return (
     <section
       id="faqs"
@@ -66,14 +66,14 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faqs-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="text-2xl font-semibold tracking-tight leading-tight text-white lg:text-4xl"
           >
             Frequently asked questions
           </h2>
           <p className="mt-2 lg:text-lg text-base text-gray-600">
             If you have anything else you want to ask,{' '}
             <a
-              href="mailto:info@example.com"
+              href="mailto:info@threefold.io"
               className="text-gray-900 underline"
             >
               reach out to us
@@ -83,7 +83,7 @@ export function Faqs() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-8  lg:max-w-none lg:grid-cols-3"
         >
           {faqs.map((column, columnIndex) => (
             <li key={columnIndex}>

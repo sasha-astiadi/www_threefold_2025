@@ -59,9 +59,7 @@ export function ProductsPreview() {
 
   return (
     <section className="w-full bg-transparent px-4 py-8 sm:px-6 mt-12 sm:pb-12 lg:px-6 relative">
-    {/* Gradient Blob Component */}
-      <div className="absolute w-[400px] h-[200px] bg-gradient-to-br from-[#505050] to-[#7e7e7e] opacity-40 rounded-full blur-[150px] bottom-[200px] left-[-150px] z-0" />
-      <div className="absolute w-[200px] h-[100px] bg-gradient-to-br from-[#505050] to-[#7e7e7e] opacity-50 rounded-full blur-[150px] top-[200px] right-[-150px] z-0" />
+    
       <div className="mx-auto max-w-7xl">
         <div className="lg:flex lg:items-center lg:justify-between lg:px-8">
           {/* Left Column - Text (1/3 width) */}
@@ -82,26 +80,36 @@ export function ProductsPreview() {
             </Button>
           </div>
         </div>
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           {products.map(product => (
-            <div key={product.id} className={`relative ${product.colSpan}`}>
-              <div className={`absolute inset-0 rounded-lg bg-gray-100 ${product.bgRounded}`} />
-              <div className={`relative flex h-full flex-col lg:flex-row overflow-hidden ${product.rounded}`}>
-                <div className={`flex justify-center items-center h-15 ${product.id > 2 ? 'lg:h-48' : 'lg:h-40'} lg:w-1/4 p-2`}>
+            <div
+              key={product.id}
+              className={`rounded-2xl bg-stat-gradient p-8 shadow-sm backdrop-blur transition-all duration-300 ease-out hover:scale-105 ${product.colSpan}`}
+              style={{
+                filter: 'brightness(1)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.filter = 'brightness(0.8) drop-shadow(0 0 20px rgba(156, 163, 175, 0.5))';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.filter = 'brightness(1)';
+              }}
+            >
+              <div className="flex h-full flex-col lg:flex-row items-center lg:items-start gap-6">
+                <div className="flex-shrink-0">
                   <img
                     alt={`${product.title} screenshot`}
                     src={product.img}
-                    className="w-full lg:w-full h-full object-contain p-2"
+                    className="w-20 h-20 lg:w-24 lg:h-24 object-contain"
                   />
                 </div>
-                <div className="pl-2 pr-6 flex-1 flex flex-col justify-center">
-                  <p className="lg:mt-0 mt-4 text-lg lg:text-xl font-medium tracking-tight text-white">{product.title}</p>
-                  <p className="mt-2 max-w-lg text-sm/6 leading-tight text-gray-600">
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl lg:text-2xl font-semibold text-white mb-3">{product.title}</h3>
+                  <p className="text-gray-700 text-sm font-light text-pretty lg:text-base">
                     {product.desc}
                   </p>
                 </div>
               </div>
-              <div className={`pointer-events-none absolute inset-0 rounded-lg shadow-sm outline outline-white/15 ${product.bgRounded}`} />
             </div>
           ))}
         </div>

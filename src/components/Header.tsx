@@ -136,7 +136,7 @@ export function Header() {
               <Button href="/login" variant="outline">
                 Info
               </Button>
-              <Button href="#" variant="solid" color="white">
+              <Button href="#" variant="glass">
                 Participate
               </Button>
             </div>

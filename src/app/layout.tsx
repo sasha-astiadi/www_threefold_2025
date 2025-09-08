@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - EngageOS',
-    default: 'EngageOS - Invest at the perfect time.',
+    template: '%s - ThreeFold',
+    default: 'ThreeFold - Decentralized internet  by everyone, for everyone.',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'ThreeFold is a fully operational, decentralized internet infrastructure – deployed locally, scalable globally, and owned and powered by the people.',
 }
 
 export default function RootLayout({
@@ -25,8 +25,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={clsx('antialiased', inter.variable)} style={{ backgroundColor: '#121212' }}>
-      <body style={{ backgroundColor: '#121212', color: '#ffffff' }}>{children}</body>
+    <html lang="en" className={clsx('antialiased', inter.variable)} suppressHydrationWarning>
+      <body className="bg-[#121212] text-white" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   )
 }

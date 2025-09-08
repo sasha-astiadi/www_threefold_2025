@@ -6,7 +6,7 @@ import { Button } from "./Button";
 
 export function Dashboard() {
   return (
-    <div className="py-24 bg-transparent">
+    <div className="py-24 bg-transparent relative">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {/* Column 1: Title & NODES */}
@@ -87,23 +87,23 @@ function StatCard({
 }) {
   return (
     <div
-      className={`relative flex flex-col overflow-hidden rounded-2xl bg-stat-gradient p-8 shadow-sm backdrop-blur transition-all duration-300 ease-out hover:scale-105 ${className}`}
+      className={`relative flex flex-col overflow-hidden rounded-2xl bg-stat-gradient p-8 transition-all duration-300 ease-out hover:scale-105 ${className}`}
       style={{
         filter: 'brightness(1)',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.filter = 'brightness(0.8) drop-shadow(0 0 20px rgba(156, 163, 175, 0.5))';
+        e.currentTarget.style.filter = 'brightness(0.8)';
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.filter = 'brightness(1)';
       }}
     >
-      <h3 className="text-lg font-semibold text-cyan-400">{label}</h3>
+      <h3 className="text-lg font-semibold text-gradient-neutral-vertical">{label}</h3>
       <p className="mt-2 text-sm font-light text-pretty text-white lg:text-base">
         {description}
       </p>
       <div className="mt-8 flex items-center space-x-3">
-        <span className="text-cyan-400 text-3xl">•</span>
+        <span className="text-gradient-neutral-vertical text-3xl">•</span>
         <div className="text-5xl font-semibold tracking-tight text-white tabular-nums">
           {value}
           {unit && (
