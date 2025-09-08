@@ -98,7 +98,7 @@ function StatCard({
         e.currentTarget.style.filter = 'brightness(1)';
       }}
     >
-      <h3 className="text-lg font-semibold text-gradient-neutral-vertical">{label}</h3>
+      <h3 className="text-lg font-semibold text-gradient-neutral-vertical" style={{ textShadow: '0 0 12px rgba(255, 255, 255, 0.3), 0 0 24px rgba(255, 255, 255, 0.1)' }}>{label}</h3>
       <p className="mt-2 text-sm font-light text-pretty text-white lg:text-base">
         {description}
       </p>

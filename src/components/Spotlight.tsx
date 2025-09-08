@@ -22,7 +22,7 @@ export function SpotlightPreview() {
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
         <div className="flex justify-center mb-6">
-           <div className="mb-4 relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+           <div className="mb-4 relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 animate-fade-in-delay-1">
               Announcing The New TF Marketplace.{' '}
               <a href="#" className="font-semibold text-white hover:text-gray-200">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -31,13 +31,13 @@ export function SpotlightPreview() {
             </div>
         </div>
 
-        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text tracking-tighter text-center text-4xl font-semibold text-transparent lg:text-6xl">
+        <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text tracking-tighter text-center text-4xl font-semibold text-transparent lg:text-6xl animate-fade-in-delay-2">
           Built by Everyone <br /> for Everyone.
         </h1>
-        <p className="mx-auto mt-8 max-w-lg text-center text-base lg:text-xl font-light text-neutral-300">
+        <p className="mx-auto mt-8 max-w-lg text-center text-base lg:text-xl font-light text-neutral-300 animate-fade-in-delay-3">
           ThreeFold is a fully operational, decentralized internet infrastructure – deployed locally, scalable globally, and owned and powered by the people.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay-4">
           <Button href="/login" variant="glass">
             Start Building
           </Button>
