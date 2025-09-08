@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 export function StackSectionPreview() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref);
 
   return (
     <section ref={ref} className="w-full bg-transparent px-4 py-8 sm:px-6 sm:pb-12 lg:px-8 relative">
@@ -45,7 +45,13 @@ export function StackSectionPreview() {
           
           {/* Right Column - Stacked Cubes (2/3 width) */}
           <div className="lg:col-span-2 flex items-center justify-center lg:justify-start order-2 lg:order-2">
-            <StackedCubes />
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <StackedCubes />
+            </motion.div>
           </div>
         </div>
       </div>
