@@ -22,7 +22,7 @@ export function SpotlightPreview() {
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
         <div className="flex justify-center mb-6">
-           <div className="mb-4 relative rounded-full px-3 py-1 text-sm/6 text-gray-700 ring-1 ring-gray-900/10 hover:ring-gray-900/20 animate-fade-in-delay-1">
+           <div className="mb-4 relative rounded-full px-6 py-2 sm:px-3 sm:py-1 text-sm/6 text-gray-700 ring-1 ring-gray-900/10 hover:ring-gray-900/20 animate-fade-in-delay-1 text-center sm:text-left">
               Announcing The New TF Marketplace.{' '}
               <a href="#" className="font-semibold text-white hover:text-gray-800">
                 <span aria-hidden="true" className="absolute inset-0" />
@@ -38,7 +38,7 @@ export function SpotlightPreview() {
           ThreeFold is a fully operational, decentralized internet infrastructure – deployed locally, scalable globally, and owned and powered by the people.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-delay-4">
-          <Button href="/login" variant="glass">
+          <Button href="/login" variant="glass" className="w-full sm:w-auto text-center justify-center">
             Start Building
           </Button>
           <Button href="#" variant="outline" color="gray">

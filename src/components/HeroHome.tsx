@@ -24,13 +24,14 @@ export default function HeroHome() {
               <p className="mt-8 lg:lg:text-lg text-base text-base text-gray-300">
                 Welcome to <span className={`font-semibold ${gradientText}`}>ThreeFold</span>: the first all-in-one, white-label engagement platform to mobilize communities, engage supporters, scale impact, and fundraise—at a fraction of the cost.
               </p>
-              <div className="mt-12 flex items-center justify-center gap-x-6 relative z-10">
-                <Button color="gradient">Get in Touch</Button>
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6 relative z-10">
+                <Button color="gradient" className="w-full sm:w-auto text-center">Get in Touch</Button>
               <Button
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 variant="outline"
+                className="w-full sm:w-auto text-center"
               >
-                <span className="ml-2.5">Book a Demo</span>
+                Book a Demo
               </Button>
               </div>
             </div>

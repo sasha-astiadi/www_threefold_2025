@@ -5,7 +5,7 @@ const baseStyles = {
   solid:
     'inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold transition-colors',
   glass:
-    'rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/15',
+    'inline-flex justify-center rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white hover:bg-white/15',
   outline:
     'inline-flex justify-center rounded-lg border py-[calc(--spacing(2)-1px)] px-[calc(--spacing(3)-1px)] text-sm transition-colors',
 }
